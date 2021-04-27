@@ -1,23 +1,16 @@
 import React from 'react';
+import ProjectList from '../ProjectList';
 import {capitalizeFirstLetter} from '../../utils/helpers';
-import photo from '../../assets/portfolio/coders_bay.PNG'
 
-function Portfolio(props){
-    const currentCategory = {
-        name: 'portfolio',
-        description: 'Projects that I have completed'
-    };
+
+function Portfolio({currentCategory}){
+    const {name, description} = currentCategory;
+    console.log('Name:' + name);
     return (
         <section>
-            <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-            <p>{currentCategory.name}</p>
-            <div>
-                <img 
-                src={photo} 
-                alt='Work example'
-                className="img-thumbnail mx-1"
-                ></img>
-            </div>
+            <h1 data-testid="h1tag">{capitalizeFirstLetter(name)}</h1>
+            <p>{description}</p>
+            <ProjectList category={currentCategory.name}/>
         </section>
     );
 }
