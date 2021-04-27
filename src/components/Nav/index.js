@@ -29,6 +29,12 @@ function Nav() {
       <h1>Manjula</h1>
       <nav>
         <ul className="flex-row">
+          <li>
+            <h1><a data-testid="link" href="/">Oh Snap!</a></h1>
+          </li>
+          <li>
+            <h2><a data-testid="about" href="#about">About me</a></h2>
+          </li>
           {categories.map((category) => (
             <li className="mx-1" key={category.name}>
               <span onClick={categorySelected(category.name)}>
