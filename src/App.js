@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
+import ContactForm from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 
 const categories = [
@@ -43,10 +44,6 @@ function App() {
   // ]);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
-  //Testing
-  console.log('All cat: ' + JSON.stringify(categories[0]));
-  console.log('Current cat: ' + JSON.stringify(currentCategory));  //why???
-
   return (
     <div>
       <Nav
@@ -56,7 +53,9 @@ function App() {
       ></Nav>
       <main>
         <div>
+          <ContactForm></ContactForm>
           <Portfolio currentCategory={currentCategory}></Portfolio>
+          <About></About>
         </div>
       </main>
     </div>

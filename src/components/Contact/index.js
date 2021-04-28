@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 
 
 function ContactForm() {
+
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const {name, email, message} = formState;
+
+    function handleChange(e){
+        setFormState({...formState, [e.target.name]: e.target.value})
+        console.log(setFormState); //where is this output?
+    }
 
     return(
         <section>
@@ -9,15 +17,15 @@ function ContactForm() {
             <form id="contact-form">
                 <div>
                     <lable htmlFor="name">Name:</lable>
-                    <input type="text" name="name" />
+                    <input type="text" name="name" onChange={handleChange} defaultValue={name}/>
                 </div>
                 <div>
                     <lable htmlFor="email">Email address:</lable>
-                    <input type="email" name="email" />
+                    <input type="email" name="email" onChange={handleChange} defaultValue={email}/>
                 </div>
                 <div>
                     <lable htmlFor="message">Message:</lable>
-                    <input type="message" rows="5" />
+                    <textarea type="message" rows="5" onChange={handleChange} defaultValue={message}/>
                 </div>
                 <button type="submit">Submit</button>
             </form>
