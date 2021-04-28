@@ -57,7 +57,6 @@ function App() {
       <main>
         <div>
           <Portfolio currentCategory={currentCategory}></Portfolio>
-          <About></About>
         </div>
       </main>
     </div>
