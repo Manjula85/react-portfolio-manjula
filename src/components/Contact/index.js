@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {validateEmail} from '../../utils/helpers';
 
 
 function ContactForm() {
@@ -11,10 +12,15 @@ function ContactForm() {
         console.log(setFormState); //where is this output?
     }
 
+    function handleSubmit(e){
+        e.preventDefault();
+        console.log(formState);
+    }
+
     return(
         <section>
             <h1>Contact me</h1>
-            <form id="contact-form">
+            <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <lable htmlFor="name">Name:</lable>
                     <input type="text" name="name" onChange={handleChange} defaultValue={name}/>
