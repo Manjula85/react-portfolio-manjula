@@ -20,28 +20,12 @@ const categories = [
   {
     name: "Resume",
     description: "Downloadable qualifications",
-  }
+  },
 ];
 
 function App() {
-  // const [categories] = useState([
-  //   {
-  //     name: "About",
-  //     description: "A breif intro about me",
-  //   },
-  //   {
-  //     name: "Portfolio",
-  //     description: "All the projects I have done so far",
-  //   },
-  //   {
-  //     name: "Contact",
-  //     description: "A form to contact me",
-  //   },
-  //   {
-  //     name: "Resume",
-  //     description: "Downloadable qualifications",
-  //   }
-  // ]);
+  const [contactSelected, setContactSelected] = useState(false);
+
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
@@ -50,13 +34,18 @@ function App() {
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        <div>
+        {!contactSelected ? (
+          <>
+            {/* <Portfolio currentCategory={currentCategory}></Portfolio> */}
+            <About></About>
+          </>
+        ) : (
           <ContactForm></ContactForm>
-          <Portfolio currentCategory={currentCategory}></Portfolio>
-          <About></About>
-        </div>
+        )}
       </main>
     </div>
   );
