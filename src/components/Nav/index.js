@@ -20,7 +20,7 @@ function Nav(props) {
 
       <nav>
         <ul className="flex-row">
-          <li className='mx-2'>
+          <li className="mx-2">
             <h2>
               <a data-testid="about" href="#about">
                 About me
@@ -34,7 +34,7 @@ function Nav(props) {
               }`}
               key={category.name}
             >
-              <span onClick={setCurrentCategory(category)}>
+              <span onClick={() => setCurrentCategory(category)}>
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>

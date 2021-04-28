@@ -1,55 +1,54 @@
 import React, { useState } from "react";
-import photo from "../../assets/portfolio/coders_bay.PNG";
 
-const ProjectList = ({category}) => {
+const ProjectList = () => {
   const [photos] = useState([
     {
-      name: "Coders bay",
+      name: "coders_bay",
+      category: "portfolio",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
+     },
+    {
+      name: "covid_positivity",
       category: "portfolio",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
     },
     {
-      name: "Covid positivity",
+      name: "nosql",
       category: "portfolio",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
     },
     {
-      name: "NoSQL",
+      name: "note_taker",
       category: "portfolio",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
     },
     {
-      name: "Note taker",
+      name: "orm_mapping",
       category: "portfolio",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
     },
     {
-      name: "ORM mapping",
+      name: "timed_quiz",
       category: "portfolio",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
-    },
-    {
-      name: "Timed quiz",
-      category: "portfolio",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
-    },
+    }
   ]);
 
   // ????
-  const currentPhotos = photos.filter((photos) => photo.category === category);
+  //const currentPhotos = photos.filter((photo) => photo.category === category);
 
   return (
     <div>
       <div className="flex-row">
-        {currentPhotos.map((image, i) => (
+        {photos.map((image) => (
           <img
-            src={require(`../../assets/portfolio/${i}.PNG`).default}
+            src={require(`../../assets/portfolio/${image.name}.PNG`).default}
             alt={image.name}
             className="imag-thumbnail mx-1"
             key={image.name}
