@@ -24,9 +24,9 @@ const categories = [
 ];
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  console.log('Current category:'+JSON.stringify(currentCategory.name));
 
   return (
     <div>
@@ -34,18 +34,18 @@ function App() {
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        {!contactSelected ? (
-          <>
-            {/* <Portfolio currentCategory={currentCategory}></Portfolio> */}
-            <About></About>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
+
+        {
+          {
+            'About': <About />,
+            'Portfolio': <Portfolio />,
+            'Contact': <ContactForm />,
+            'Resume': <h1>NOT YET</h1>
+          }[currentCategory.name]
+        }     
+
       </main>
     </div>
   );
