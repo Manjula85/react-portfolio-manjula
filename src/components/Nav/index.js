@@ -10,35 +10,24 @@ function Nav(props) {
 
   return (
     <header className="flex-row px-1">
-      <h1>Manjula</h1>
-
-      <h3>
-        <a data-testid="link" href="/">
-          Oh Snap!
-        </a>
-      </h3>
 
       <nav>
+        <br></br>
+        <h1 >Manjula</h1>
         <ul className="flex-row">
-          <li className="mx-2">
-            <h2>
-              <a data-testid="about" href="#about">
-                About me
-              </a>
-            </h2>
-          </li>
           {categories.map((category) => (
             <li
               className={`mx-1 ${
                 currentCategory.name === category.name && "navActive"
               }`}
               key={category.name}
-            >
+            ><h3>
               <span onClick={() => {
                 setCurrentCategory(category)
                 }}>
                 {capitalizeFirstLetter(category.name)}
               </span>
+              </h3>
             </li>
           ))}
         </ul>

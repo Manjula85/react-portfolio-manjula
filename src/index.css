@@ -293,3 +293,10 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+/* profile-image */
+.altProfile{
+  border-radius: 20%;
+  width:15%;
+  height: auto;
+}

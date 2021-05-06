@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
+import Resume from "./components/Resume";
 import ContactForm from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 
@@ -42,7 +43,7 @@ function App() {
             'About': <About />,
             'Portfolio': <Portfolio />,
             'Contact': <ContactForm />,
-            'Resume': <h1>NOT YET</h1>
+            'Resume': <Resume />
           }[currentCategory.name]
         }     
 
