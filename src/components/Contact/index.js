@@ -11,36 +11,84 @@ function ContactForm() {
   const [errorMessage, setErrorMessage] = useState("");
   const { name, email, message } = formState;
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log("Submit form", formState);
+  // function handleChange(e) {
+  //   if (e.target.name === "email") {
+  //     const isValid = validateEmail(e.target.value);
+  //     if (!isValid) {
+  //       setErrorMessage("Your email is invalid.");
+  //       setFormState({ ...formState, [e.target.name]: e.target.value });
+  //     } else {
+  //       setErrorMessage("default");
+  //       setFormState({ ...formState, [e.target.name]: e.target.value });
+  //     }
+  //   } else {
+  //     if (!e.target.value.length) {
+  //       setErrorMessage(`${e.target.name} is required.`);
+  //       setFormState({ ...formState, [e.target.name]: e.target.value });
+  //     } else {
+  //       setErrorMessage("default");
+  //       setFormState({ ...formState, [e.target.name]: e.target.value });
+  //     }
+  //   }
+
+  //   if (!errorMessage || errorMessage === "default") {
+  //     setErrorMessage("");
+  //     setFormState({ ...formState, [e.target.name]: e.target.value });
+
+  //     console.log("Handle Form", formState);
+  //   }
+  // }
+  function onChangeHandler(e) {
+    console.log(e.target.value);
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+    const key = e.target.name;
+    switch (key) {
+      case "name": {
+        if (e.target.value.length > 0) {
+          //setFormState({ ...formState, [e.target.name]: e.target.value });
+          setErrorMessage("");
+        } else {
+          //setFormState({ ...formState, [e.target.name]: e.target.value });
+          setErrorMessage(`${e.target.name} is required.`);
+        }
+        break;
+      }
+      case "email": {
+        const isValid = validateEmail(e.target.value);
+        if (isValid) {
+          //setFormState({ ...formState, [e.target.name]: e.target.value });
+          setErrorMessage("");
+        } else {
+          //setFormState({ ...formState, [e.target.name]: e.target.value });
+          setErrorMessage("Your email is invalid.");
+        }
+        break;
+      }
+      case "message": {
+        if (e.target.value.length > 0) {
+          //setFormState({ ...formState, [e.target.name]: e.target.value });
+          setErrorMessage("");
+        } else {
+          //setFormState({ ...formState, [e.target.name]: e.target.value });
+          setErrorMessage("Your message is invalid.");
+        }
+        break;
+      }
     }
   }
 
-  function handleChange(e) {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-        } else {
-        setErrorMessage('');
-        }
-      } else {
-        if (!e.target.value.length) {
-          setErrorMessage(`${e.target.name} is required.`);
-        } else {
-          setErrorMessage("");
-        }
-      }
+  function handleSubmit(e) {
+    e.preventDefault();
 
-      if (!errorMessage) {
-        setFormState({ ...formState, [e.target.name]: e.target.value });
+    console.log("Error message: " + errorMessage);
 
-        console.log('Handle Form', formState);
-      }
-    };
-  
+    // if (!errorMessage) {
+    //   console.log("Submit form", formState);
+    // }
+    if(errorMessage.length === 0 && name.length > 0 && email.length > 0 && message.length > 0){
+      console.log("Submit form", formState);
+    }
+  }
 
   return (
     <section>
@@ -51,7 +99,7 @@ function ContactForm() {
           <input
             type="text"
             name="name"
-            onBlur={handleChange}
+            onBlur={onChangeHandler}
             defaultValue={name}
           />
         </div>
@@ -60,7 +108,7 @@ function ContactForm() {
           <input
             type="email"
             name="email"
-            onBlur={handleChange}
+            onBlur={onChangeHandler}
             defaultValue={email}
           />
         </div>
@@ -68,8 +116,9 @@ function ContactForm() {
           <lable htmlFor="message">Message:</lable>
           <textarea
             type="message"
+            name="message"
             rows="5"
-            onBlur={handleChange}
+            onBlur={onChangeHandler}
             defaultValue={message}
           />
         </div>
@@ -78,7 +127,9 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" type="submit">
+          Submit
+        </button>
       </form>
     </section>
   );

@@ -25,9 +25,8 @@ const categories = [
 ];
 
 function App() {
-
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  console.log('Current category:'+JSON.stringify(currentCategory.name));
+  console.log("Current category:" + JSON.stringify(currentCategory.name));
 
   return (
     <div>
@@ -37,17 +36,23 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
-
         {
           {
-            'About': <About />,
-            'Portfolio': <Portfolio />,
-            'Contact': <ContactForm />,
-            'Resume': <Resume />
+            About: <About />,
+            Portfolio: <Portfolio />,
+            Contact: <ContactForm />,
+            Resume: <Resume />,
           }[currentCategory.name]
-        }     
-
+        }
       </main>
+      <footer>
+        <table class="footerTable">
+          <tr>
+          <td class="footerTableTd"><a href="https://github.com/Manjula85">https://github.com/Manjula85</a></td>          
+          <td><a href="https://twitter.com/MGuneratne">https://twitter.com/MGuneratne</a></td>
+          </tr>
+        </table>
+      </footer>
     </div>
   );
 }

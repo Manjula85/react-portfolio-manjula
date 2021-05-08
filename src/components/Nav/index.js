@@ -9,7 +9,7 @@ function Nav(props) {
   }, [currentCategory]);
 
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row px-1 stripe-2">
 
       <nav>
         <br></br>
