@@ -1,7 +1,5 @@
 # React Porfolio
 
-# CMS-blog-Manjula
-
 ## Purpose
 To create my profile page.
 
@@ -36,4 +34,4 @@ To create my profile page.
 ## Relevant links
 URL: https://manjula85.github.io/CMS-blog-Manjula/
 
-Git hub link: # CMS-blog-Manjula
+Git hub link: https://github.com/Manjula85/react-portfolio-manjula
