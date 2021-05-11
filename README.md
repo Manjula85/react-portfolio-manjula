@@ -18,19 +18,19 @@ To build a CMS-style blog site similar to a Wordpress site, where developers can
 * web-vitals
 
 ### About
-![](/images/about.png)
+![](/images/about.PNG)
 
 ### Portfolio
 
-![](/images/portfolio.png)
+![](/images/portfolio.PNG)
 
 ### Contact
 
-![](/images/contact.png)
+![](/images/contact.PNG)
 
 ### Resume
 
-![](/images/resume.png)
+![](/images/resume.PNG)
 
 
 ## Relevant links
