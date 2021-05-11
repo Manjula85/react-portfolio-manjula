@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# React Porfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CMS-blog-Manjula
 
-## Available Scripts
+## Purpose
+To build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
-In the project directory, you can run:
+## Built with
+* JavaScript
+* Node
+* CSS
+* HTML
 
-### `npm start`
+## npm 
+* bcrypt
+* connect-session-sequelize
+* dotenv
+* express
+* express-handlebars
+* express-session
+* jest
+* mysql2
+* sequelize
+* nodemon
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Login
+![](/images/login.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Sign-up
 
-### `npm test`
+![](/images/sign-up.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Homepage
 
-### `npm run build`
+![](/images/homepage.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dashboard
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](/images/dashboard.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### New Post
 
-### `npm run eject`
+![](/images/new-post.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Edit-Delete
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](/images/edit-delete.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Relevant links
+URL: https://manjula85.github.io/CMS-blog-Manjula/
 
-## Learn More
+Git hub link: # CMS-blog-Manjula
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Purpose
+To build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Built with
+* JavaScript
+* Node
+* CSS
+* Handlebars
+* HTML
 
-### Code Splitting
+## npm 
+* bcrypt
+* connect-session-sequelize
+* dotenv
+* express
+* express-handlebars
+* express-session
+* jest
+* mysql2
+* sequelize
+* nodemon
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Login
+![](/images/login.png)
 
-### Analyzing the Bundle Size
+### Sign-up
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![](/images/sign-up.png)
 
-### Making a Progressive Web App
+### Homepage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![](/images/homepage.png)
 
-### Advanced Configuration
+### Dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![](/images/dashboard.png)
 
-### Deployment
+### New Post
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![](/images/new-post.png)
 
-### `npm run build` fails to minify
+### Edit-Delete
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![](/images/edit-delete.png)
+
+
+## Relevant links
+URL: https://manjula85.github.io/react-portfolio-manjula/
+
+Git hub link: https://github.com/Manjula85/react-portfolio-manjula
