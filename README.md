@@ -12,16 +12,10 @@ To build a CMS-style blog site similar to a Wordpress site, where developers can
 * HTML
 
 ## npm 
-* bcrypt
-* connect-session-sequelize
-* dotenv
-* express
-* express-handlebars
-* express-session
-* jest
-* mysql2
-* sequelize
-* nodemon
+* react
+* react-dom
+* react-script
+* web-vitals
 
 ### About
 ![](/images/about.png)
