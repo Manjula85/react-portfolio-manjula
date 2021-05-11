@@ -1,0 +1,25 @@
+timed_quiz
+Git hub: https://github.com/Manjula85/timed-quiz-Manjula
+Published URL: https://manjula85.github.io/timed-quiz-Manjula/
+
+covid_positivity
+URL: https://uot-project1-group07.github.io/project1-group07/
+Git hub: https://github.com/Uot-Project1-Group07/project1-group07
+Portfolio: file:///C:/SPB_Data/Challenges/Portfolio-Manjula/index.html
+
+coders_bay
+URL of the application: https://the-coders-bay-app.herokuapp.com/ (Links to an external site.)
+Git hub link: https://github.com/codinggroupproject02/codersbay (Links to an external site.)
+Portfolio link: https://github.com/Manjula85/Portfolio-Manjula
+
+orm_mapping
+Walkthrough link: https://drive.google.com/file/d/1HWiMuvherL9isZBzIcscuF6jdaZ_c2Hw/view (Links to an external site.)
+Git hub link: https://github.com/Manjula85/e-commerce-Manjula
+
+nosql
+Walkthrough video link: https://drive.google.com/file/d/1h09F2e_0vs6ZB6xEdbM07CwepJrYMPkf/view (Links to an external site.)
+Git hub link: https://github.com/Manjula85/social-media-Manjula
+
+note_taker
+Git hub link: https://github.com/Manjula85/NoteTaker-Manjula
+Site URL: https://manjula85.github.io/NoteTaker-Manjula/

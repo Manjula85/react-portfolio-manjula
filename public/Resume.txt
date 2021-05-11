@@ -1,0 +1,18 @@
+Front-end Proficiencies
+-HTML
+-CSS
+-JavaScript
+-jQuery
+-responsive design
+-React
+-Bootstrap
+
+Back-end Proficiencies
+-HTML
+-APIs
+-Node
+-Express
+-MySQL, Sequelize
+-MongoDB, Mongoose
+-REST
+-GraphQL
