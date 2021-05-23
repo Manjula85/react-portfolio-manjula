@@ -3,6 +3,13 @@ import React, { useState } from "react";
 const ProjectList = () => {
   const [photos] = useState([
     {
+      name: "dog_dash",
+      category: "portfolio",
+      link: "https://dog-dash.herokuapp.com/",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
+    },
+    {
       name: "coders_bay",
       category: "portfolio",
       link: "https://the-coders-bay-app.herokuapp.com/",
