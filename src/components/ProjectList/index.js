@@ -1,7 +1,15 @@
 import React, { useState } from "react";
+import { Card, Image } from "semantic-ui-react";
 
 const ProjectList = () => {
   const [photos] = useState([
+    {
+      name: "dog_dash",
+      category: "portfolio",
+      link: "https://dog-dash.herokuapp.com/",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
+    },
     {
       name: "coders_bay",
       category: "portfolio",
@@ -48,21 +56,29 @@ const ProjectList = () => {
 
   return (
     <div>
-      <div className="flex-row">
-        <section class="img-flex">
+      {photos.length ? (
+        <section className="ui three cards">
           {photos.map((image) => (
-              <a href={image.link} target="_blank" rel="noreferrer">
-              <img
-                src={
-                  require(`../../assets/portfolio/${image.name}.PNG`).default
-                }
-                alt={image.name}
-                key={image.name}
-              />         
-              </a>  
+              <div className="ui fluid card">
+                <a href={image.link} target="_blank" rel="noreferrer">
+                  <div className="image">
+                    <img
+                      src={
+                        require(`../../assets/portfolio/${image.name}.PNG`)
+                          .default
+                      }
+                      alt={image.name}
+                      key={image.name}
+                    />
+                    <h4 style={{color: '#a3a3c2'}}>{image.name}</h4>
+                  </div>
+                </a>
+              </div>
           ))}
         </section>
-      </div>
+      ) : (
+        <h3>No posts</h3>
+      )}
     </div>
   );
 };
