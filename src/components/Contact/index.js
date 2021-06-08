@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import emailjs from 'emailjs-com';
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -87,7 +88,18 @@ function ContactForm() {
     // }
     if(errorMessage.length === 0 && name.length > 0 && email.length > 0 && message.length > 0){
       console.log("Submit form", formState);
+
+      //only send the email if there are no errors
+      emailjs.sendForm('gmail','',e.target,'user_lyaYYxicXzJitwc6ufAhw')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+      e.target.reset();
     }
+
+
   }
 
   return (
@@ -127,7 +139,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">
+        <button data-testid="button" type="submit" value="send">
           Submit
         </button>
       </form>

@@ -7,7 +7,7 @@ function Resume() {
         Download my{" "}
         <span>
           <b>
-            <a href="Resume.docx" download>
+            <a href="Resume.txt" download>
               RESUME
             </a>
           </b>
