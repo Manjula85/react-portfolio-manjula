@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -11,6 +11,8 @@ function ContactForm() {
 
   const [errorMessage, setErrorMessage] = useState("");
   const { name, email, message } = formState;
+  //Message when the email is sent
+  const [sentMessage, setSentMessage] = useState("");
 
   function onChangeHandler(e) {
     console.log(e.target.value);
@@ -59,20 +61,29 @@ function ContactForm() {
     // if (!errorMessage) {
     //   console.log("Submit form", formState);
     // }
-    if(errorMessage.length === 0 && name.length > 0 && email.length > 0 && message.length > 0){
+    if (
+      errorMessage.length === 0 &&
+      name.length > 0 &&
+      email.length > 0 &&
+      message.length > 0
+    ) {
       console.log("Submit form", formState);
 
       //only send the email if there are no errors
-      emailjs.sendForm('service_v07f92b','template_c6tm34i',e.target,'user_lyaYYxicXzJitwc6ufAhw')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+      // emailjs.sendForm('service_v07f92b','template_c6tm34i',e.target,'user_lyaYYxicXzJitwc6ufAhw')
+      // .then((result) => {
+      //   setSentMessage("sent");
+      //   console.log(result.text);
+      // }, (error) => {
+      //   console.log(error.text);
+      // });
       //e.target.reset();
-      
-    }
 
+      setSentMessage("sent");
+
+      setFormState({ name: "", email: "", message: "" });
+      console.log('Form state value: ', name, email, message);
+    }
   }
 
   return (
@@ -116,6 +127,11 @@ function ContactForm() {
           Submit
         </button>
       </form>
+      {sentMessage && (
+        <div>
+          <p className="sent-text">Email sent to mgunerate3@gmail.com</p>
+        </div>
+      )}
     </section>
   );
 }
