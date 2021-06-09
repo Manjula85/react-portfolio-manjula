@@ -12,33 +12,6 @@ function ContactForm() {
   const [errorMessage, setErrorMessage] = useState("");
   const { name, email, message } = formState;
 
-  // function handleChange(e) {
-  //   if (e.target.name === "email") {
-  //     const isValid = validateEmail(e.target.value);
-  //     if (!isValid) {
-  //       setErrorMessage("Your email is invalid.");
-  //       setFormState({ ...formState, [e.target.name]: e.target.value });
-  //     } else {
-  //       setErrorMessage("default");
-  //       setFormState({ ...formState, [e.target.name]: e.target.value });
-  //     }
-  //   } else {
-  //     if (!e.target.value.length) {
-  //       setErrorMessage(`${e.target.name} is required.`);
-  //       setFormState({ ...formState, [e.target.name]: e.target.value });
-  //     } else {
-  //       setErrorMessage("default");
-  //       setFormState({ ...formState, [e.target.name]: e.target.value });
-  //     }
-  //   }
-
-  //   if (!errorMessage || errorMessage === "default") {
-  //     setErrorMessage("");
-  //     setFormState({ ...formState, [e.target.name]: e.target.value });
-
-  //     console.log("Handle Form", formState);
-  //   }
-  // }
   function onChangeHandler(e) {
     console.log(e.target.value);
     setFormState({ ...formState, [e.target.name]: e.target.value });
@@ -90,15 +63,15 @@ function ContactForm() {
       console.log("Submit form", formState);
 
       //only send the email if there are no errors
-      emailjs.sendForm('gmail','',e.target,'user_lyaYYxicXzJitwc6ufAhw')
+      emailjs.sendForm('service_v07f92b','template_c6tm34i',e.target,'user_lyaYYxicXzJitwc6ufAhw')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
-      e.target.reset();
+      //e.target.reset();
+      
     }
-
 
   }
 
