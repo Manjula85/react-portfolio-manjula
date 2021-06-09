@@ -1,41 +1,40 @@
 import React from "react";
 import coverImage from "../../assets/cover/current-pic.jpg";
+import { Grid, Image } from "semantic-ui-react";
 
 function About() {
   return (
     <section className="my-5">
       <h1 id="about"> The About section</h1>
       <br></br>
-      <table>
-        <tr>
-          <td>
-            <img
-              src={coverImage}
-              className="my-2"
-              style={{ width: "90%" }}
-              alt="cover"
-              class="altProfile"
-            />
-          </td>
-          <td>
-            <h4>
-              I am an aspiring 'Full Stack Developer'. I am currently employed
-              in the maintenance sector as a maintenance assistant. The
-              inspiration towards creating a software was first as a solution
-              for many issues I find myself at work. There are many tasks like
-              keeping track of inventory and cataloguing purchases still being
-              done through inefficient methods. I knew that it required more
-              custom software, but I lacked the knowledge to do it. I did try to
-              solve issues like keeping track of orders I purchased through
-              learning SQL but I wasn't able to develop more on it. Even though
-              I did try to learn other software online it was a very slow
-              process. So that is when I thought of joining this course. But
-              other than just solving the issues at work I would love to move
-              into a better paying software development sector one day!
-            </h4>
-          </td>
-        </tr>
-      </table>
+      <Grid>
+        <Grid.Column width={4}>
+          <img
+            src={coverImage}
+            className="my-2"
+            style={{ width: "90%" }}
+            alt="cover"
+            class="altProfile"
+          />
+        </Grid.Column>
+        <Grid.Column width={12}>
+          <h4>
+            I am an aspiring 'Full Stack Developer'. I am currently employed in
+            the maintenance sector as a maintenance assistant. The inspiration
+            towards creating a software was first as a solution for many issues
+            I find myself at work. There are many tasks like keeping track of
+            inventory and cataloguing purchases still being done through
+            inefficient methods. I knew that it required more custom software,
+            but I lacked the knowledge to do it. I did try to solve issues like
+            keeping track of orders I purchased through learning SQL but I
+            wasn't able to develop more on it. Even though I did try to learn
+            other software online it was a very slow process. So that is when I
+            thought of joining this course. But other than just solving the
+            issues at work I would love to move into a better paying software
+            development sector one day!
+          </h4>
+        </Grid.Column>
+      </Grid>
     </section>
   );
 }
