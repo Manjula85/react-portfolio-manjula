@@ -1,6 +1,6 @@
 import React from "react";
 import coverImage from "../../assets/cover/current-pic.jpg";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid, GridRow, Image } from "semantic-ui-react";
 
 function About() {
   return (
@@ -8,16 +8,15 @@ function About() {
       <h1 id="about"> The About section</h1>
       <br></br>
       <Grid>
-        <Grid.Column width={4}>
+        <Grid.Column>
           <img
             src={coverImage}
-            className="my-2"
-            style={{ width: "90%" }}
+            size="large"
             alt="cover"
             class="altProfile"
           />
         </Grid.Column>
-        <Grid.Column width={12}>
+        <Grid.Column>
           <h4>
             I am an aspiring 'Full Stack Developer'. I am currently employed in
             the maintenance sector as a maintenance assistant. The inspiration
