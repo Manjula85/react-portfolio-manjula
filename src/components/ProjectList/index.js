@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 //import { Card, Image } from "semantic-ui-react";
+// placeholder image
+import coverImage from "../../assets/cover/current-pic.jpg";
 
 const ProjectList = () => {
   const [photos] = useState([
     {
       name: "dog_dash",
+      image_path: "dog_dash.ba9dd062",
       category: "portfolio",
       link: "https://dog-dash.herokuapp.com/",
       description:
@@ -12,6 +15,7 @@ const ProjectList = () => {
     },
     {
       name: "coders_bay",
+      image_path: "coders_bay.433e8425",
       category: "portfolio",
       link: "https://the-coders-bay-app.herokuapp.com/",
       description:
@@ -19,6 +23,7 @@ const ProjectList = () => {
     },
     {
       name: "covid_positivity",
+      image_path: "covid_positivity.97c87e95",
       category: "portfolio",
       link: "https://uot-project1-group07.github.io/project1-group07/",
       description:
@@ -26,6 +31,7 @@ const ProjectList = () => {
     },
     {
       name: "nosql",
+      image_path: "nosql.c8bbcdcf",
       category: "portfolio",
       link: "https://github.com/Manjula85/social-media-Manjula",
       description:
@@ -33,6 +39,7 @@ const ProjectList = () => {
     },
     {
       name: "note_taker",
+      image_path: "note_taker.96f9df41",
       category: "portfolio",
       link: "https://manjula85.github.io/NoteTaker-Manjula/",
       description:
@@ -40,6 +47,7 @@ const ProjectList = () => {
     },
     {
       name: "orm_mapping",
+      image_path: "orm_mapping.ef54c58e",
       category: "portfolio",
       link: "https://github.com/Manjula85/e-commerce-Manjula",
       description:
@@ -47,13 +55,14 @@ const ProjectList = () => {
     },
     {
       name: "timed_quiz",
+      image_path: "timed_quiz.1b938e9f",
       category: "portfolio",
       link: "https://manjula85.github.io/timed-quiz-Manjula/",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper tempor luctus. Integer volutpat, tortor.",
     },
   ]);
-
+  //build\static\media\coders_bay.433e8425.PNG
   return (
     <div>
       {photos.length ? (
@@ -64,13 +73,18 @@ const ProjectList = () => {
                   <div className="image">
                     <img
                       src={
-                        require(`../../assets/portfolio/${image.name}.PNG`)
-                          .default
+                        //require(`../../assets/portfolio/${image.name}.PNG`)
+                          //require(`../../assets/cover/current-pic.jpg`)
+                          //.default
+                          //require(`./assets/portfolio/nosql.PNG`).default
+                          coverImage
                       }
+                      //src='cat-birthday-memes-01-720x360.jpg'
                       alt={image.name}
                       key={image.name}
                     />
                     <h4 style={{color: '#a3a3c2'}}>{image.name}</h4>
+                    <h4 style={{color: '#a3a3c2'}}>{image.link}</h4>
                   </div>
                 </a>
               </div>
