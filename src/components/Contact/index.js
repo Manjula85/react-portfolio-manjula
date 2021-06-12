@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import linkedImage from "../../assets/cover/LI-Logo.png";
 import emailjs from "emailjs-com";
 
 function ContactForm() {
@@ -70,25 +71,51 @@ function ContactForm() {
       console.log("Submit form", formState);
 
       //only send the email if there are no errors
-      // emailjs.sendForm('service_v07f92b','template_c6tm34i',e.target,'user_lyaYYxicXzJitwc6ufAhw')
-      // .then((result) => {
-      //   setSentMessage("sent");
-      //   console.log(result.text);
-      // }, (error) => {
-      //   console.log(error.text);
-      // });
+      emailjs
+        .sendForm(
+          "service_v07f92b",
+          "template_c6tm34i",
+          e.target,
+          "user_lyaYYxicXzJitwc6ufAhw"
+        )
+        .then(
+          (result) => {
+            setSentMessage("sent");
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       //e.target.reset();
 
-      setSentMessage("sent");
+      // setSentMessage("sent");
 
-      setFormState({ name: "", email: "", message: "" });
-      console.log('Form state value: ', name, email, message);
+      // setFormState({ name: "", email: "", message: "" });
+      // console.log("Form state value: ", name, email, message);
     }
   }
-
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+    <section style={{ float: "none" }}>
+      <div style={{ float: "left" }}>
+        <h1 data-testid="h1tag">Contact me</h1>
+      </div>
+      <div style={{ float: "right" }}>
+        <a
+          href="https://www.linkedin.com/in/manjula-guneratne/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={linkedImage}
+            style={{ width: "15%", height: "auto" }}
+            alt="linkedin"
+          />
+        </a>
+      </div>
+      <br />
+      <br />
+      <br />
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <lable htmlFor="name">Name:</lable>

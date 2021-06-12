@@ -11,7 +11,6 @@ function About() {
       <Segment>
         <Image
           src={coverImage}
-          //size='small'
           style={{ width: "40%", height: "auto" }}
           floated="left"
           alt="cover"
