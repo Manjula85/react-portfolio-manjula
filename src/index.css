@@ -351,3 +351,6 @@ a {
   text-decoration: none !important;
 }
 
+td {
+  padding: 10px;
+}

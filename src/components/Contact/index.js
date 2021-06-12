@@ -97,24 +97,26 @@ function ContactForm() {
   }
   return (
     <section style={{ float: "none" }}>
-      <div style={{ float: "left" }}>
-        <h1 data-testid="h1tag">Contact me</h1>
-      </div>
-      <div style={{ float: "right" }}>
-        <a
-          href="https://www.linkedin.com/in/manjula-guneratne/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src={linkedImage}
-            style={{ width: "15%", height: "auto" }}
-            alt="linkedin"
-          />
-        </a>
-      </div>
-      <br />
-      <br />
+      <table>
+        <tr>
+          <td style={{ width: "20%", height: "auto" }}>
+            <h1 data-testid="h1tag">Contact me</h1>
+          </td>
+          <td style={{ width: "65%", height: "auto" }}>
+            <a
+              href="https://www.linkedin.com/in/manjula-guneratne/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={linkedImage}
+                style={{ width: "15%", height: "auto" }}
+                alt="linkedin"
+              />
+            </a>
+          </td>
+        </tr>
+      </table>
       <br />
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
