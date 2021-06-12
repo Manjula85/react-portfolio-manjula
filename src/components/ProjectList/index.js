@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 //import { Card, Image } from "semantic-ui-react";
 
+
 const ProjectList = () => {
   const [photos] = useState([
     {
@@ -64,9 +65,12 @@ const ProjectList = () => {
                   <div className="image">
                     <img
                       src={
-                        require(`../../assets/portfolio/${image.name}.PNG`)
-                          .default
+                        //require(`../../assets/portfolio/${image.name}.PNG`)
+                          //require(`../../assets/cover/current-pic.jpg`)
+                          //.default
+                          require(`../../assets/portfolio/nosql.PNG`).default
                       }
+                      //src='cat-birthday-memes-01-720x360.jpg'
                       alt={image.name}
                       key={image.name}
                     />
