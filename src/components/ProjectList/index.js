@@ -73,11 +73,11 @@ const ProjectList = () => {
                   <div className="image">
                     <img
                       src={
-                        //require(`../../assets/portfolio/${image.name}.PNG`)
+                        require(`../portfolio/${image.name}.PNG`).default
                           //require(`../../assets/cover/current-pic.jpg`)
                           //.default
                           //require(`./assets/portfolio/nosql.PNG`).default
-                          coverImage
+                          //coverImage
                       }
                       //src='cat-birthday-memes-01-720x360.jpg'
                       alt={image.name}
