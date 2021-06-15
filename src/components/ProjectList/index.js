@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 //import { Card, Image } from "semantic-ui-react";
-// placeholder image
-import coverImage from "../../assets/cover/current-pic.jpg";
 
 const ProjectList = () => {
   const [photos] = useState([
@@ -68,26 +66,24 @@ const ProjectList = () => {
       {photos.length ? (
         <section className="ui three cards">
           {photos.map((image) => (
-              <div className="ui fluid card">
-                <a href={image.link} target="_blank" rel="noreferrer">
-                  <div className="image">
-                    <img
-                      src={
-                        require(`../portfolio/${image.name}.PNG`).default
-                          //require(`../../assets/cover/current-pic.jpg`)
-                          //.default
-                          //require(`./assets/portfolio/nosql.PNG`).default
-                          //coverImage
-                      }
-                      //src='cat-birthday-memes-01-720x360.jpg'
-                      alt={image.name}
-                      key={image.name}
-                    />
-                    <h4 style={{color: '#a3a3c2'}}>{image.name}</h4>
-                    <h4 style={{color: '#a3a3c2'}}>{image.link}</h4>
-                  </div>
-                </a>
-              </div>
+            <div className="ui fluid card">
+              <a href={image.link} target="_blank" rel="noreferrer">
+                <div className="image">
+                  <img
+                    src={`../portfolio/${image.name}.PNG`
+                      //require(`../portfolio/${image.name}.PNG`)
+                      //.default
+                      //require(`./assets/portfolio/nosql.PNG`).default
+                      //coverImage
+                    }
+                    alt={image.name}
+                    key={image.name}
+                  />
+                  <h4 style={{ color: '#a3a3c2' }}>{image.name}</h4>
+                  <h4 style={{ color: '#a3a3c2' }}>{image.link}</h4>
+                </div>
+              </a>
+            </div>
           ))}
         </section>
       ) : (
