@@ -98,9 +98,8 @@ const ProjectList = () => {
             <a href={image.link} target="_blank" rel="noreferrer">
               <div className="image">
                 <img
-                  src={`../portfolio/${image.name}.PNG`
-                    //require(`../portfolio/${image.name}.PNG`)
-                    //.default
+                  //src={`./assets/portfolio/${image.name}.PNG`
+                  src={require(`../../assets/portfolio/${image.name}.PNG`).default
                     //require(`./assets/portfolio/nosql.PNG`).default
                     //coverImage
                   }
