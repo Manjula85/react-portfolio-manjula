@@ -72,23 +72,21 @@ const ProjectList = () => {
             {photos.map((image) => (
               <div className="ui fluid card">
 
-                <div class="grid-item">
-                  <a href={image.link} target="_blank" rel="noreferrer">
-                    <div className="image">
-                      <img
-                        src={require(`../../assets/portfolio/${image.name}.PNG`).default
-                        }
-                        alt={image.name}
-                        key={image.name}
-                        className="img-thumbnail mx-1"
-                      />
-                      <h4 style={{ color: '#a3a3c2' }}>{image.name}</h4>
-                      <h4 style={{ color: '#a3a3c2' }}>{image.link}</h4>
-                    </div>
-                  </a>
-                </div>
-
+                <a href={image.link} target="_blank" rel="noreferrer">
+                  <div className="image">
+                    <img
+                      src={require(`../../assets/portfolio/${image.name}.PNG`).default
+                      }
+                      alt={image.name}
+                      key={image.name}
+                      className="img-thumbnail mx-1"
+                    />
+                    <h4 style={{ color: '#a3a3c2' }}>{image.name}</h4>
+                    <h4 style={{ color: '#a3a3c2' }}>{image.link}</h4>
+                  </div>
+                </a>
               </div>
+
             ))}
 
           </section>
