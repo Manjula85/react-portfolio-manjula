@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Grid, Segment, Image, GridRow } from "semantic-ui-react";
 //importing all the image paths here...
-
+import git_hub_image from "../../assets/cover/GitHub-Mark.png";
+import Project_link from "../../assets/cover/link_to_project.jpg";
 
 const ProjectList = () => {
   const [photos] = useState([
@@ -72,18 +73,25 @@ const ProjectList = () => {
             {photos.map((image) => (
               <div className="ui fluid card">
 
+                <div className="image">
+                  <img
+                    src={require(`../../assets/portfolio/${image.name}.PNG`).default
+                    }
+                    alt={image.name}
+                    key={image.name}
+                    className="img-thumbnail mx-1"
+                  />
+                  <h4 style={{ color: '#a3a3c2' }}>{image.name}</h4>
+                  <h4 style={{ color: '#a3a3c2' }}>{image.link}</h4>
+                </div>
+
+                <table>
+                  <tr>
+                    <td><img src="git_hub_image" alt="">Git hub</img></td>
+                    <td><img src="Project_link" alt="">Project linj</img></td>
+                  </tr>
+                </table>
                 <a href={image.link} target="_blank" rel="noreferrer">
-                  <div className="image">
-                    <img
-                      src={require(`../../assets/portfolio/${image.name}.PNG`).default
-                      }
-                      alt={image.name}
-                      key={image.name}
-                      className="img-thumbnail mx-1"
-                    />
-                    <h4 style={{ color: '#a3a3c2' }}>{image.name}</h4>
-                    <h4 style={{ color: '#a3a3c2' }}>{image.link}</h4>
-                  </div>
                 </a>
               </div>
 
