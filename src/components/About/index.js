@@ -14,7 +14,6 @@ function About() {
           style={{ width: "40%", height: "auto" }}
           floated="left"
           alt="cover"
-          //class="altProfile"
         />
         <h4>
           I am an aspiring 'Full Stack Developer'. I am currently employed in
