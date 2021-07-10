@@ -74,22 +74,29 @@ const ProjectList = () => {
       {photos.length ? (
         <section className="ui three cards">
           {photos.map((image) => (
-            <div className="ui fluid card">
 
-              <div className="image">
-                <img
-                  src={`../portfolio/${image.name}.PNG`}
-                  alt={image.name}
-                  key={image.name}
-                />
-                <h4 style={{ color: '#a3a3c2' }}>{image.name}</h4>
-                <h4 style={{ color: '#a3a3c2' }}>{image.link}</h4>
+            <div>
+              <h4 style={{ color: '#a3a3c2' }}>{image.name}</h4>
+              <div className="flex-container">
+                <div className="image flex-image">
+                  <img
+                    src={`../portfolio/${image.name}.PNG`}
+                    alt={image.name}
+                    key={image.name}
+                  />
+                </div>
+                <div className=" flex-description">
+                  {image.description}
+                </div>
+                <div class="flex-links">
+                  <a href={image.git_hub} target="_blank" rel="noreferrer">Git Hub</a>
+                  <br /><br /><br />
+                  <a href={image.link} target="_blank" rel="noreferrer">Project link</a>
+                </div>
               </div>
-
-              <div><a href={image.git_hub} target="_blank" rel="noreferrer">Git Hub</a></div>
-              <div><a href={image.link} target="_blank" rel="noreferrer">Project link</a></div>
-
+              <br />
             </div>
+
           ))}
         </section>
       ) : (

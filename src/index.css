@@ -324,16 +324,6 @@ a {
   height: auto;
 }
 
-.img-flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.img-flex > img {
-  width: 50%;
-  padding-bottom: 5%;
-}
-
 /*Footer table*/
 .footerTable {
   margin-left: auto;
@@ -353,4 +343,23 @@ a {
 
 td {
   padding: 10px;
+}
+
+/*Flex project display*/
+.flex-container {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.flex-image{
+  flex: 1 0 50%;
+}
+
+.flex-description{
+  flex: 1 0 40%;
+}
+
+.flex-links{
+  flex: 1 0 10%;
 }
