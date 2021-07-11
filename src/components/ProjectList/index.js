@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, Segment, Image, GridRow } from "semantic-ui-react";
+import dog_dash from "../../assets/portfolio_images/dog_dash.PNG"
 
 const ProjectList = () => {
   const [photos] = useState([
@@ -75,7 +75,6 @@ const ProjectList = () => {
     },
   ]);
 
-
   return (
     <div>
       {photos.length ? (
@@ -87,7 +86,11 @@ const ProjectList = () => {
               <div className="flex-container">
                 <div className="flex-image">
                   <img
-                    src={`../portfolio/${image.name}.PNG`}
+                    //src={image.name.replace(/['"]+/g, '')}
+                    //src={require(`../../assets/portfolio_images/dog_dash.PNG`).default}
+                    src={`../../assets/portfolio_images/${image.name}.PNG`}
+                    //src\assets\portfolio_images\coders_bay.PNG
+                    //src\components\ProjectList\index.js
                     alt={image.name}
                     key={image.name}
                   />
@@ -98,7 +101,7 @@ const ProjectList = () => {
                   <p><u>Technologies used</u></p>
                   {image.technologies}
                 </div>
-                <div class="flex-links">
+                <div className="flex-links">
                 <p><u>Associated links</u></p>
                   <a href={image.git_hub} target="_blank" rel="noreferrer">Git Hub</a>
                   <br /><br /><br />

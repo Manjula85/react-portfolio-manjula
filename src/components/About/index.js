@@ -1,6 +1,6 @@
 import React from "react";
 import coverImage from "../../assets/cover/current-pic.jpg";
-import { Grid, Segment, Image, GridRow } from "semantic-ui-react";
+import {Segment, Image } from "semantic-ui-react";
 
 function About() {
   return (
