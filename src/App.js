@@ -46,10 +46,10 @@ function App() {
         }
       </main>
       <footer>
-        <table class="footerTable">
+        <table className="footerTable">
           <tr>
-          <td class="footerTableTd"><a href="mailto:mguneratne3@gamil.com">mguneratne3@gamil.com</a></td>
-          <td class="footerTableTd"><a href="https://github.com/Manjula85">https://github.com/Manjula85</a></td>          
+          <td className="footerTableTd"><a href="mailto:mguneratne3@gamil.com">mguneratne3@gamil.com</a></td>
+          <td className="footerTableTd"><a href="https://github.com/Manjula85">https://github.com/Manjula85</a></td>          
           <td><a href="https://twitter.com/MGuneratne">https://twitter.com/MGuneratne</a></td>
           </tr>
         </table>
