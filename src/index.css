@@ -345,16 +345,16 @@ td {
   padding: 10px;
 }
 
-/* .card-container{
-  display: flex;
-  width: 50vh;
-  height: 100%;
-} */
+.card-container{
+  /*display: flex;*/
+  text-align: center;
+  margin: auto;
+} 
 
 /*Flex project display*/
 .flex-container {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
