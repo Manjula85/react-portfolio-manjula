@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import dog_dash from "../../assets/portfolio_images/dog_dash.PNG"
+//All of the image paths
+import coders_bay from "../../assets/portfolio_images/coders_bay.PNG";
+import covid_positivity from "../../assets/portfolio_images/covid_positivity.PNG";
+import dog_dash from "../../assets/portfolio_images/dog_dash.PNG";
+import nosql from "../../assets/portfolio_images/nosql.PNG";
+import note_taker from "../../assets/portfolio_images/note_taker.PNG";
+import orm_mapping from "../../assets/portfolio_images/orm_mapping.PNG";
+import timed_quiz from "../../assets/portfolio_images/timed_quiz.PNG";
 
 const ProjectList = () => {
   const [photos] = useState([
@@ -75,6 +82,19 @@ const ProjectList = () => {
     },
   ]);
 
+  //To select the correct image
+  const setPath = param => {
+    switch(param){
+      case "coders_bay": return coders_bay;
+      case "covid_positivity": return covid_positivity;
+      case "dog_dash": return dog_dash;
+      case "nosql": return nosql;
+      case "note_taker": return note_taker;
+      case "orm_mapping": return orm_mapping;
+      case "timed_quiz": return timed_quiz;
+    }
+  }
+
   return (
     <div>
       {photos.length ? (
@@ -86,7 +106,7 @@ const ProjectList = () => {
               <div className="flex-container">
                 <div className="flex-image">
                   <img
-                    src={dog_dash}
+                    src={setPath(image.name)}
                     //src={image.name.replace(/['"]+/g, '')}
                     //src={require(`../../assets/portfolio_images/dog_dash.PNG`).default}
                     //src={`../../assets/portfolio_images/${image.name}.PNG`}
