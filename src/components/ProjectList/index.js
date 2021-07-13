@@ -98,7 +98,7 @@ const ProjectList = () => {
   return (
     <div>
       {photos.length ? (
-        <section className="card-container">
+        <section>
           {photos.map((image) => (
 
             <div>
