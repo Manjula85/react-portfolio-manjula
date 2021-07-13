@@ -1,10 +1,17 @@
 {
-  "main.css": "static/css/main.162fcec0.css",
-  "main.css.map": "static/css/main.162fcec0.css.map",
-  "main.js": "static/js/main.05194c4b.js",
-  "main.js.map": "static/js/main.05194c4b.js.map",
-  "static/js/0.1eb2c780.chunk.js": "static/js/0.1eb2c780.chunk.js",
-  "static/js/0.1eb2c780.chunk.js.map": "static/js/0.1eb2c780.chunk.js.map",
+  "main.css": "static/css/main.bb66a887.css",
+  "main.css.map": "static/css/main.bb66a887.css.map",
+  "main.js": "static/js/main.fb541907.js",
+  "main.js.map": "static/js/main.fb541907.js.map",
+  "static/js/0.31d053e4.chunk.js": "static/js/0.31d053e4.chunk.js",
+  "static/js/0.31d053e4.chunk.js.map": "static/js/0.31d053e4.chunk.js.map",
   "static\\media\\LI-Logo.png": "static/media/LI-Logo.c24cde28.png",
-  "static\\media\\current-pic.jpg": "static/media/current-pic.6d12686a.jpg"
+  "static\\media\\coders_bay.PNG": "static/media/coders_bay.433e8425.PNG",
+  "static\\media\\covid_positivity.PNG": "static/media/covid_positivity.97c87e95.PNG",
+  "static\\media\\current-pic.jpg": "static/media/current-pic.6d12686a.jpg",
+  "static\\media\\dog_dash.PNG": "static/media/dog_dash.ba9dd062.PNG",
+  "static\\media\\nosql.PNG": "static/media/nosql.c8bbcdcf.PNG",
+  "static\\media\\note_taker.PNG": "static/media/note_taker.96f9df41.PNG",
+  "static\\media\\orm_mapping.PNG": "static/media/orm_mapping.ef54c58e.PNG",
+  "static\\media\\timed_quiz.PNG": "static/media/timed_quiz.1b938e9f.PNG"
 }
