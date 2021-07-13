@@ -86,9 +86,10 @@ const ProjectList = () => {
               <div className="flex-container">
                 <div className="flex-image">
                   <img
+                    src={dog_dash}
                     //src={image.name.replace(/['"]+/g, '')}
                     //src={require(`../../assets/portfolio_images/dog_dash.PNG`).default}
-                    src={`../../assets/portfolio_images/${image.name}.PNG`}
+                    //src={`../../assets/portfolio_images/${image.name}.PNG`}
                     //src\assets\portfolio_images\coders_bay.PNG
                     //src\components\ProjectList\index.js
                     alt={image.name}

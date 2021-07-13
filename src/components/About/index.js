@@ -1,6 +1,5 @@
 import React from "react";
 import coverImage from "../../assets/cover/current-pic.jpg";
-import {Segment, Image } from "semantic-ui-react";
 
 function About() {
   return (
@@ -8,8 +7,8 @@ function About() {
       <h1 id="about"> The About section</h1>
       <br></br>
 
-      <Segment>
-        <Image
+      <div>
+        <img
           src={coverImage}
           style={{ width: "40%", height: "auto" }}
           floated="left"
@@ -31,7 +30,7 @@ function About() {
           I would love to move into a better paying software development sector
           one day!
         </h4>
-      </Segment>
+      </div>
     </section>
   );
 }
