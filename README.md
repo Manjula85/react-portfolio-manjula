@@ -32,6 +32,6 @@ To create my profile page.
 
 
 ## Relevant links
-URL: https://manjula85.github.io/CMS-blog-Manjula/
+URL: https://manjula-guneratne.github.io/CMS-blog-Manjula/
 
-Git hub link: https://github.com/Manjula85/react-portfolio-manjula
+Git hub link: https://github.com/manjula-guneratne/react-portfolio
