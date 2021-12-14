@@ -1,17 +1,31 @@
 {
-  "main.css": "static/css/main.47521417.css",
-  "main.css.map": "static/css/main.47521417.css.map",
-  "main.js": "static/js/main.3e7b7b40.js",
-  "main.js.map": "static/js/main.3e7b7b40.js.map",
-  "static/js/0.31d053e4.chunk.js": "static/js/0.31d053e4.chunk.js",
-  "static/js/0.31d053e4.chunk.js.map": "static/js/0.31d053e4.chunk.js.map",
-  "static\\media\\LI-Logo.png": "static/media/LI-Logo.c24cde28.png",
-  "static\\media\\coders_bay.PNG": "static/media/coders_bay.433e8425.PNG",
-  "static\\media\\covid_positivity.PNG": "static/media/covid_positivity.97c87e95.PNG",
-  "static\\media\\current-pic.jpg": "static/media/current-pic.6d12686a.jpg",
-  "static\\media\\dog_dash.PNG": "static/media/dog_dash.ba9dd062.PNG",
-  "static\\media\\nosql.PNG": "static/media/nosql.c8bbcdcf.PNG",
-  "static\\media\\note_taker.PNG": "static/media/note_taker.96f9df41.PNG",
-  "static\\media\\orm_mapping.PNG": "static/media/orm_mapping.ef54c58e.PNG",
-  "static\\media\\timed_quiz.PNG": "static/media/timed_quiz.1b938e9f.PNG"
+  "files": {
+    "main.css": "/react-portfolio-manjula/static/css/main.5f597511.chunk.css",
+    "main.js": "/react-portfolio-manjula/static/js/main.632d428f.chunk.js",
+    "main.js.map": "/react-portfolio-manjula/static/js/main.632d428f.chunk.js.map",
+    "runtime-main.js": "/react-portfolio-manjula/static/js/runtime-main.1d0bee09.js",
+    "runtime-main.js.map": "/react-portfolio-manjula/static/js/runtime-main.1d0bee09.js.map",
+    "static/js/2.8d8a0e52.chunk.js": "/react-portfolio-manjula/static/js/2.8d8a0e52.chunk.js",
+    "static/js/2.8d8a0e52.chunk.js.map": "/react-portfolio-manjula/static/js/2.8d8a0e52.chunk.js.map",
+    "static/js/3.e12ad6c3.chunk.js": "/react-portfolio-manjula/static/js/3.e12ad6c3.chunk.js",
+    "static/js/3.e12ad6c3.chunk.js.map": "/react-portfolio-manjula/static/js/3.e12ad6c3.chunk.js.map",
+    "index.html": "/react-portfolio-manjula/index.html",
+    "static/css/main.5f597511.chunk.css.map": "/react-portfolio-manjula/static/css/main.5f597511.chunk.css.map",
+    "static/js/2.8d8a0e52.chunk.js.LICENSE.txt": "/react-portfolio-manjula/static/js/2.8d8a0e52.chunk.js.LICENSE.txt",
+    "static/media/LI-Logo.a95afc06.png": "/react-portfolio-manjula/static/media/LI-Logo.a95afc06.png",
+    "static/media/coders_bay.2b362819.PNG": "/react-portfolio-manjula/static/media/coders_bay.2b362819.PNG",
+    "static/media/covid_positivity.e5170308.PNG": "/react-portfolio-manjula/static/media/covid_positivity.e5170308.PNG",
+    "static/media/current-pic.f4a6ed4e.jpg": "/react-portfolio-manjula/static/media/current-pic.f4a6ed4e.jpg",
+    "static/media/dog_dash.8bfd59c8.PNG": "/react-portfolio-manjula/static/media/dog_dash.8bfd59c8.PNG",
+    "static/media/nosql.14e36c56.PNG": "/react-portfolio-manjula/static/media/nosql.14e36c56.PNG",
+    "static/media/note_taker.231c0b93.PNG": "/react-portfolio-manjula/static/media/note_taker.231c0b93.PNG",
+    "static/media/orm_mapping.13111b66.PNG": "/react-portfolio-manjula/static/media/orm_mapping.13111b66.PNG",
+    "static/media/timed_quiz.edf45fe7.PNG": "/react-portfolio-manjula/static/media/timed_quiz.edf45fe7.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d0bee09.js",
+    "static/js/2.8d8a0e52.chunk.js",
+    "static/css/main.5f597511.chunk.css",
+    "static/js/main.632d428f.chunk.js"
+  ]
 }
